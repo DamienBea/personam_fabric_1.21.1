@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "personam",
+	"version": "${version}",
+	"name": "PersonaM",
+	"description": "PersonaM by Team Luxron!",
+	"authors": [
+		"Team Luxron!"
+	],
+	"contact": {
+		"homepage": "https://github.com/DamienBea",
+		"sources": "https://github.com/DamienBea/personam_fabric_1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/personam/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.teamluxron.personam.PersonaM"
+		],
+		"fabric-datagen": [
+			"net.teamluxron.personam.PersonaMDataGenerator"
+		],
+		"client": [
+			"net.teamluxron.personam.PersonamClient"
+		]
+	},
+	"mixins": [
+		"personam.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
