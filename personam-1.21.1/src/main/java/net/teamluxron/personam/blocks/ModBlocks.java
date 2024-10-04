@@ -25,7 +25,7 @@ public class ModBlocks {
     public static final Block VELVITE_WALL = registerBlock("velvite_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block POLISHED_VELVITE = registerBlock("velvite",
+    public static final Block POLISHED_VELVITE = registerBlock("polished_velvite",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block POLISHED_VELVITE_STAIRS = registerBlock("polished_velvite_stairs",
@@ -51,7 +51,7 @@ public class ModBlocks {
     public static final Block VELVITE_BRICK_WALL = registerBlock("velvite_brick_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block VELVITE_TILE = registerBlock("velvite",
+    public static final Block VELVITE_TILE = registerBlock("velvite_tile",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block VELVITE_TILE_STAIRS = registerBlock("velvite_tile_stairs",
@@ -63,9 +63,6 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block VELVITE_TILE_WALL = registerBlock("velvite_tile_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block POLISHED_VELVITE = registerBlock("polished_velvite",
-            new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block CHISELED_VELVITE = registerBlock("chiseled_velvite",
             new Block(AbstractBlock.Settings.create().strength(4f)

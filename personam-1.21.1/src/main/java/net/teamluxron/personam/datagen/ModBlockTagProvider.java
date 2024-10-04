@@ -31,5 +31,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
 
         ;
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.VELVITE_WALL)
+                .add(ModBlocks.VELVITE_TILE_WALL)
+                .add(ModBlocks.POLISHED_VELVITE_WALL)
+                .add(ModBlocks.POLISHED_SOULCITE_WALL)
+                .add(ModBlocks.SOULCITE_WALL)
+                .add(ModBlocks.SOULCITE_BRICK_WALL)
+                .add(ModBlocks.VELVITE_BRICK_WALL)
+        ;
+
+//        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
+//        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
     }
 }
