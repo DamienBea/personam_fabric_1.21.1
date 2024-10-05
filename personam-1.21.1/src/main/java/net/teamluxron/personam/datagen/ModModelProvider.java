@@ -27,8 +27,14 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool SOULCITE_BRICKSBlockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOULCITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool SOULCITE_TILEBlockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOULCITE_TILE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_SOULCITE);
-        //Stairs
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VELVET_OAK_LOG);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VELVET_OAK_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_VELVET_OAK_LOG);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_VELVET_OAK_WOOD);
+        BlockStateModelGenerator.BlockTexturePool VOPBlockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VELVET_OAK_PLANKS);
 
+
+        //Stairs
         VELVITEBlockPool.stairs(ModBlocks.VELVITE_STAIRS);
         POLISHED_VELVITEBlockPool.stairs(ModBlocks.POLISHED_VELVITE_STAIRS);
         VELVITE_BRICKSBlockPool.stairs(ModBlocks.VELVITE_BRICK_STAIRS);
@@ -37,6 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         POLISHED_SOULCITEBlockPool.stairs(ModBlocks.POLISHED_SOULCITE_STAIRS);
         SOULCITE_BRICKSBlockPool.stairs(ModBlocks.SOULCITE_BRICK_STAIRS);
         SOULCITE_TILEBlockPool.stairs(ModBlocks.SOULCITE_TILE_STAIRS);
+        VOPBlockPool.stairs(ModBlocks.VELVET_OAK_STAIRS);
 
         //Slabs
         VELVITEBlockPool.slab(ModBlocks.VELVITE_SLAB);
@@ -47,6 +54,7 @@ public class ModModelProvider extends FabricModelProvider {
         POLISHED_SOULCITEBlockPool.slab(ModBlocks.POLISHED_SOULCITE_SLAB);
         SOULCITE_BRICKSBlockPool.slab(ModBlocks.SOULCITE_BRICK_SLAB);
         SOULCITE_TILEBlockPool.slab(ModBlocks.SOULCITE_TILE_SLAB);
+        VOPBlockPool.slab(ModBlocks.VELVET_OAK_SLAB);
 
         //Walls
         VELVITEBlockPool.wall(ModBlocks.VELVITE_WALL);
@@ -57,6 +65,18 @@ public class ModModelProvider extends FabricModelProvider {
         POLISHED_SOULCITEBlockPool.wall(ModBlocks.POLISHED_SOULCITE_WALL);
         SOULCITE_BRICKSBlockPool.wall(ModBlocks.SOULCITE_BRICK_WALL);
         SOULCITE_TILEBlockPool.wall(ModBlocks.SOULCITE_TILE_WALL);
+
+        //Buttons and Pressureplates
+        VOPBlockPool.button(ModBlocks.VELVET_OAK_BUTTON);
+        VOPBlockPool.pressurePlate(ModBlocks.VELVET_OAK_PRESSURE_PLATE);
+
+        //Fences and Gates
+        VOPBlockPool.fence(ModBlocks.VELVET_OAK_FENCE);
+        VOPBlockPool.fenceGate(ModBlocks.VELVET_OAK_FENCE_GATE);
+
+        //Doors and Trapdoors
+        blockStateModelGenerator.registerDoor(ModBlocks.VELVET_OAK_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.VELVET_OAK_TRAPDOOR);
 
 
     }

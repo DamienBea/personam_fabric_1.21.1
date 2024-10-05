@@ -122,6 +122,43 @@ public class ModBlocks {
     public static final Block CHISELED_SOULCITE = registerBlock("chiseled_soulcite",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block VELVET_OAK_LOG = registerBlock("velvet_oak_log",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_WOOD = registerBlock("velvet_oak_wood",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block STRIPPED_VELVET_OAK_LOG = registerBlock("stripped_velvet_oak_log",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block STRIPPED_VELVET_OAK_WOOD = registerBlock("stripped_velvet_oak_wood",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_PLANKS = registerBlock("velvet_oak_planks",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_STAIRS = registerBlock("velvet_oak_stairs",
+            new StairsBlock(ModBlocks.VELVET_OAK_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(1f)
+                            .requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_SLAB = registerBlock("velvet_oak_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block VELVET_OAK_BUTTON = registerBlock("velvet_oak_button",
+            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.create().strength(1f).requiresTool().noCollision().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_PRESSURE_PLATE = registerBlock("velvet_oak_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block VELVET_OAK_FENCE = registerBlock("velvet_oak_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_FENCE_GATE = registerBlock("velvet_oak_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block VELVET_OAK_DOOR = registerBlock("velvet_oak_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(1f).requiresTool().nonOpaque()));
+    public static final Block VELVET_OAK_TRAPDOOR = registerBlock("velvet_oak_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().strength(1f).requiresTool().nonOpaque()));
+    public static final Block VELVET_OAK_SAPLING = registerBlock("velvet_oak_sapling",
+            new Block(AbstractBlock.Settings.create().strength(1f)
+                    .requiresTool().sounds(BlockSoundGroup.GRASS)));
+
 
 
 
@@ -172,6 +209,20 @@ public class ModBlocks {
             entries.add(ModBlocks.SOULCITE_TILE_SLAB);
             entries.add(ModBlocks.SOULCITE_TILE_WALL);
             entries.add(ModBlocks.CHISELED_SOULCITE);
+            entries.add(ModBlocks.VELVET_OAK_LOG);
+            entries.add(ModBlocks.VELVET_OAK_WOOD);
+            entries.add(ModBlocks.STRIPPED_VELVET_OAK_LOG);
+            entries.add(ModBlocks.STRIPPED_VELVET_OAK_WOOD);
+            entries.add(ModBlocks.VELVET_OAK_PLANKS);
+            entries.add(ModBlocks.VELVET_OAK_STAIRS);
+            entries.add(ModBlocks.VELVET_OAK_SLAB);
+            entries.add(ModBlocks.VELVET_OAK_BUTTON);
+            entries.add(ModBlocks.VELVET_OAK_PRESSURE_PLATE);
+            entries.add(ModBlocks.VELVET_OAK_FENCE);
+            entries.add(ModBlocks.VELVET_OAK_FENCE_GATE);
+            entries.add(ModBlocks.VELVET_OAK_DOOR);
+            entries.add(ModBlocks.VELVET_OAK_TRAPDOOR);
+            entries.add(ModBlocks.VELVET_OAK_SAPLING);
         });
     }
 }
